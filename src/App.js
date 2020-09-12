@@ -1,13 +1,19 @@
 import React, { Component } from "react";
 import "./App.css";
-import Main from "./Main.js";
+import "./main.css";
+import Input from "./Input";
 
 class App extends Component {
   render() {
     return (
       <div>
         <h1 className="heading">Your Todo List</h1>
-        <Main />
+        <div className="main">
+          <div className="input">
+            <Input />
+            <button className="input__button">Add</button>
+          </div>
+        </div>
       </div>
     );
   }
