@@ -1,0 +1,8 @@
+.output__card {
+  width: 200px;
+  height: 200px;
+  background-color: #8fc0a9;
+  border: 1px solid #8fc0a9;
+  border-radius: 5px;
+  margin: 0px 10px;
+}

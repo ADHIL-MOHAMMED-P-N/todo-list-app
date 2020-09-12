@@ -11,3 +11,7 @@
   display: flex;
   width: 100%;
 }
+.output {
+  margin-top: 20px;
+  display: flex;
+}
