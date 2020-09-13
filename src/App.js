@@ -23,6 +23,15 @@ class App extends Component {
     });
   };
 
+  deleteItem = (item) => {
+    let list = this.state.todoList;
+    const index = list.indexOf(item);
+    list.splice(index, 1);
+    this.setState({
+      todoList: list,
+    });
+  };
+
   render() {
     return (
       <div>
@@ -42,7 +51,7 @@ class App extends Component {
           </div>
           <div className="output">
             {this.state.todoList.map((item) => (
-              <Output todo={item} />
+              <Output todo={item} delete={() => this.deleteItem(item)} />
             ))}
           </div>
         </div>
