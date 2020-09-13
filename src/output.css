@@ -13,4 +13,16 @@
 .output__cardPara {
   font-size: 20px;
   padding: 4px;
+  margin-top: 5px;
+}
+
+/*moble view*/
+@media only screen and (max-device-width: 480px) {
+  .output__card {
+    height: 60px;
+  }
+  .output__cardPara {
+    padding: 5px;
+    font-size: 15px;
+  }
 }
