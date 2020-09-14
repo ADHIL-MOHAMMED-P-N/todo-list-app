@@ -15,12 +15,14 @@ class App extends Component {
   };
 
   addToList = (input) => {
-    let list = this.state.todoList;
-    list.push(input);
-    this.setState({
-      todoList: list,
-      input: "",
-    });
+    if (input != "") {
+      let list = this.state.todoList;
+      list.push(input);
+      this.setState({
+        todoList: list,
+        input: "",
+      });
+    }
   };
 
   deleteItem = (item) => {
